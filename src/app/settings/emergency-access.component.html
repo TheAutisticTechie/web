@@ -21,7 +21,7 @@
     </h2>
     <div class="ml-auto d-flex">
         <button class="btn btn-sm btn-outline-primary ml-3" type="button" (click)="invite()" [disabled]="!canAccessPremium">
-            <i aria-hidden="true" class="fa fa-plus fa-fw"></i>
+            <i aria-hidden="true" class="fa-solid fa-plus fa-fw"></i>
             {{'addEmergencyContact' |i18n}}
         </button>
     </div>
@@ -57,31 +57,31 @@
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                         appA11yTitle="{{'options' | i18n}}">
-                        <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                        <i class="fa-solid fa-gear fa-lg" aria-hidden="true"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="#" appStopClick (click)="reinvite(c)"
                             *ngIf="c.status === emergencyAccessStatusType.Invited">
-                            <i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>
+                            <i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i>
                             {{'resendInvitation' | i18n}}
                         </a>
                         <a class="dropdown-item text-success" href="#" appStopClick (click)="confirm(c)"
                             *ngIf="c.status === emergencyAccessStatusType.Accepted">
-                            <i class="fa fa-fw fa-check" aria-hidden="true"></i>
+                            <i class="fa-solid fa-check fa-fw" aria-hidden="true"></i>
                             {{'confirm' | i18n}}
                         </a>
                         <a class="dropdown-item text-success" href="#" appStopClick (click)="approve(c)"
                             *ngIf="c.status === emergencyAccessStatusType.RecoveryInitiated">
-                            <i class="fa fa-fw fa-check" aria-hidden="true"></i>
+                            <i class="fa-solid fa-check fa-fw" aria-hidden="true"></i>
                             {{'approve' | i18n}}
                         </a>
                         <a class="dropdown-item text-warning" href="#" appStopClick (click)="reject(c)"
                             *ngIf="c.status === emergencyAccessStatusType.RecoveryInitiated || c.status === emergencyAccessStatusType.RecoveryApproved">
-                            <i class="fa fa-fw fa-remove" aria-hidden="true"></i>
+                            <i class="fa-solid fa-xmark fa-fw" aria-hidden="true"></i>
                             {{'reject' | i18n}}
                         </a>
                         <a class="dropdown-item text-danger" href="#" appStopClick (click)="remove(c)">
-                            <i class="fa fa-fw fa-remove" aria-hidden="true"></i>
+                            <i class="fa-solid fa-xmark fa-fw" aria-hidden="true"></i>
                             {{'remove' | i18n}}
                         </a>
                     </div>
@@ -127,26 +127,26 @@
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                         appA11yTitle="{{'options' | i18n}}">
-                        <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                        <i class="fa-solid fa-gear fa-lg" aria-hidden="true"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a class="dropdown-item" href="#" appStopClick (click)="requestAccess(c)"
                             *ngIf="c.status === emergencyAccessStatusType.Confirmed">
-                            <i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i>
+                            <i class="fa-solid fa-envelope fa-fw" aria-hidden="true"></i>
                             {{'requestAccess' | i18n}}
                         </a>
                         <a class="dropdown-item" href="#" appStopClick (click)="takeover(c)"
                             *ngIf="c.status === emergencyAccessStatusType.RecoveryApproved && c.type === emergencyAccessType.Takeover">
-                            <i class="fa fa-fw fa-key" aria-hidden="true"></i>
+                            <i class="fa-solid fa-key fa-fw" aria-hidden="true"></i>
                             {{'takeover' | i18n}}
                         </a>
                         <a class="dropdown-item" [routerLink]="c.id"
                             *ngIf="c.status === emergencyAccessStatusType.RecoveryApproved && c.type === emergencyAccessType.View">
-                            <i class="fa fa-fw fa-eye" aria-hidden="true"></i>
+                            <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
                             {{'view' | i18n}}
                         </a>
                         <a class="dropdown-item text-danger" href="#" appStopClick (click)="remove(c)">
-                            <i class="fa fa-fw fa-remove" aria-hidden="true"></i>
+                            <i class="fa-solid fa-xmark fa-fw" aria-hidden="true"></i>
                             {{'remove' | i18n}}
                         </a>
                     </div>

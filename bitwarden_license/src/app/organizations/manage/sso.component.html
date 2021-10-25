@@ -3,7 +3,7 @@
 </div>
 
 <ng-container *ngIf="loading">
-    <i class="fa fa-spinner fa-spin text-muted" title="{{'loading' | i18n}}" aria-hidden="true"></i>
+    <i class="fa-solid fa-spinner fa-spin text-muted" title="{{'loading' | i18n}}" aria-hidden="true"></i>
     <span class="sr-only">{{'loading' | i18n}}</span>
 </ng-container>
 
@@ -36,7 +36,7 @@
                         <button type="button" class="btn btn-outline-secondary"
                             appA11yTitle="{{'copyValue' | i18n}}"
                             (click)="copy(callbackPath)">
-                            <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+                            <i class="fa-solid fa-clone fa-lg" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                         <button type="button" class="btn btn-outline-secondary"
                             appA11yTitle="{{'copyValue' | i18n}}"
                             (click)="copy(signedOutCallbackPath)">
-                            <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+                            <i class="fa-solid fa-clone fa-lg" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                         <button type="button" class="btn btn-outline-secondary"
                             appA11yTitle="{{'copyValue' | i18n}}"
                             (click)="copy(spEntityId)">
-                            <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+                            <i class="fa-solid fa-clone fa-lg" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -138,12 +138,12 @@
                         <button type="button" class="btn btn-outline-secondary"
                             appA11yTitle="{{'launch' | i18n}}"
                             (click)="launchUri(spMetadataUrl)">
-                            <i class="fa fa-lg fa-external-link" aria-hidden="true"></i>
+                            <i class="fa-solid fa-up-right-from-square fa-lg" aria-hidden="true"></i>
                         </button>
                         <button type="button" class="btn btn-outline-secondary"
                             appA11yTitle="{{'copyValue' | i18n}}"
                             (click)="copy(spMetadataUrl)">
-                            <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+                            <i class="fa-solid fa-clone fa-lg" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                         <button type="button" class="btn btn-outline-secondary"
                             appA11yTitle="{{'copyValue' | i18n}}"
                             (click)="copy(spAcsUrl)">
-                            <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+                            <i class="fa-solid fa-clone fa-lg" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -278,7 +278,7 @@
     </div>
 
     <button type="submit" class="btn btn-primary btn-submit" [disabled]="form.loading">
-        <i class="fa fa-spinner fa-spin" title="{{'loading' | i18n}}" aria-hidden="true"></i>
+        <i class="fa-solid fa-spinner fa-spin" title="{{'loading' | i18n}}" aria-hidden="true"></i>
         <span>{{'save' | i18n}}</span>
     </button>
 </form>

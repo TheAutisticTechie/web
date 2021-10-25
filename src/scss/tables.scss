@@ -36,7 +36,7 @@
             }
         }
 
-        .fa-globe {
+        .fa-earth-africa {
             @include themify($themes) {
                 color: themed('iconColor');
             }

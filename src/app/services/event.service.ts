@@ -307,23 +307,23 @@ export class EventService {
             case DeviceType.LinuxDesktop:
                 return ['fa-linux', this.i18nService.t('desktop') + ' - Linux'];
             case DeviceType.ChromeBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - Chrome'];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - Chrome'];
             case DeviceType.FirefoxBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - Firefox'];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - Firefox'];
             case DeviceType.OperaBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - Opera'];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - Opera'];
             case DeviceType.SafariBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - Safari'];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - Safari'];
             case DeviceType.VivaldiBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - Vivaldi'];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - Vivaldi'];
             case DeviceType.EdgeBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - Edge'];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - Edge'];
             case DeviceType.IEBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - IE'];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - IE'];
             case DeviceType.UnknownBrowser:
-                return ['fa-globe', this.i18nService.t('webVault') + ' - ' + this.i18nService.t('unknown')];
+                return ['fa-earth-africa', this.i18nService.t('webVault') + ' - ' + this.i18nService.t('unknown')];
             default:
-                return ['fa-globe', this.i18nService.t('unknown')];
+                return ['fa-earth-africa', this.i18nService.t('unknown')];
         }
     }
 

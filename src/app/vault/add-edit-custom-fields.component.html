@@ -7,7 +7,7 @@
                     <label for="fieldName{{i}}">{{'name' | i18n}}</label>
                     <a class="ml-auto" href="https://help.bitwarden.com/article/custom-fields/"
                         target="_blank" rel="noopener" appA11yTitle="{{'learnMore' | i18n}}">
-                        <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                        <i class="fa-solid fa-circle-question" aria-hidden="true"></i>
                     </a>
                 </div>
                 <input id="fieldName{{i}}" type="text" name="Field.Name{{i}}" [(ngModel)]="f.name"
@@ -24,7 +24,7 @@
                             <button type="button" class="btn btn-outline-secondary"
                                 appA11yTitle="{{'copyValue' | i18n}}"
                                 (click)="copy(f.value, 'value', 'Field')">
-                                <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+                                <i class="fa-solid fa-clone fa-lg" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             <button type="button" class="btn btn-outline-secondary"
                                 appA11yTitle="{{'toggleVisibility' | i18n}}" (click)="toggleFieldValue(f)"
                                 [disabled]="!cipher.viewPassword && !f.newField">
-                                <i class="fa fa-lg" aria-hidden="true"
+                                <i class="fa-solid fa-lg" aria-hidden="true"
                                     [ngClass]="{'fa-eye': !f.showValue, 'fa-eye-slash': f.showValue}">
                                 </i>
                             </button>
@@ -45,7 +45,7 @@
                                 appA11yTitle="{{'copyValue' | i18n}}"
                                 (click)="copy(f.value, 'value', f.type === fieldType.Hidden ? 'H_Field' : 'Field')"
                                 [disabled]="!cipher.viewPassword && !f.newField">
-                                <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+                                <i class="fa-solid fa-clone fa-lg" aria-hidden="true"></i>
                             </button>
                         </div>
                     </div>
@@ -56,11 +56,11 @@
                     </div>
                     <button type="button" class="btn btn-link text-danger ml-2" (click)="removeField(f)"
                         appA11yTitle="{{'remove' | i18n}}" *ngIf="!cipher.isDeleted && !viewOnly">
-                        <i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i>
+                        <i class="fa-solid fa-circle-minus fa-lg" aria-hidden="true"></i>
                     </button>
                     <button type="button" class="btn btn-link text-muted cursor-move"
                         appA11yTitle="{{'dragToSort' | i18n}}" *ngIf="!cipher.isDeleted && !viewOnly">
-                        <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                        <i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i>
                     </button>
                 </div>
             </div>
@@ -68,7 +68,7 @@
     </div>
     <a href="#" appStopClick (click)="addField()" class="d-inline-block mb-2"
         *ngIf="!cipher.isDeleted && !viewOnly">
-        <i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i> {{'newCustomField' | i18n}}
+        <i class="fa-solid fa-circle-plus fa-fw" aria-hidden="true"></i> {{'newCustomField' | i18n}}
     </a>
     <div class="row" *ngIf="!cipher.isDeleted && !viewOnly">
         <div class="col-5">

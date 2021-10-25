@@ -75,7 +75,9 @@ $grid-breakpoints: (
 $text-color: #333333;
 $border-color: $secondary;
 
-$fa-font-path: "~font-awesome/fonts";
+// Font Awesome webfonts path
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
 // MFA Types for logo styling with no dark theme alternative
 

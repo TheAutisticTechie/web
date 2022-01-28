@@ -86,7 +86,7 @@ export function initFactory(
     authService.init();
     const htmlEl = window.document.documentElement;
     htmlEl.classList.add("locale_" + i18nService.translationLocale);
-
+    htmlEl.setAttribute("lang", i18nService.translationLocale);
     // Initial theme is set in index.html which must be updated if there are any changes to theming logic
     platformUtilsService.onDefaultSystemThemeChange(async (sysTheme) => {
       const bwTheme = await stateService.getTheme();
